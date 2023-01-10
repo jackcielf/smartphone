@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=dtial-scale=1.0">
+    <link rel="stylesheet" href="css/styleApp.css">
+    <link rel="stylesheet" href="css/style-layout-calculator.css">
+    <link rel="stylesheet" href="css/style-layout-instagram.css">
+    <link rel="stylesheet" href="css/style-layout-spotify.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <title>Phone</title>
+</head>
+
+<body>
+    <main id="phone">
+        <nav id="status-bar">
+            <div class="container-bar">
+                <div class="container-bar-right">
+                    <div class="battery">
+                        <svg class="svg16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                            <path d="M352 320H96V192H352V320zM0 176C0 131.8 35.82 96 80 96H464C508.2 96 544 131.8 544 176V192C561.7 192 576 206.3 576 224V288C576 305.7 561.7 320 544 320V336C544 380.2 508.2 416 464 416H80C35.82 416 0 380.2 0 336V176zM80 160C71.16 160 64 167.2 64 176V336C64 344.8 71.16 352 80 352H464C472.8 352 480 344.8 480 336V176C480 167.2 472.8 160 464 160H80z" />
+                        </svg>
+                    </div>
+                    <div class="sign">
+                        <svg class="svg16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                            <path d="M544 0c-17.67 0-32 14.33-32 31.1V480C512 497.7 526.3 512 544 512s32-14.33 32-31.1V31.1C576 14.33 561.7 0 544 0zM160 288C142.3 288 128 302.3 128 319.1v160C128 497.7 142.3 512 160 512s32-14.33 32-31.1V319.1C192 302.3 177.7 288 160 288zM32 384C14.33 384 0 398.3 0 415.1v64C0 497.7 14.33 512 31.1 512S64 497.7 64 480V415.1C64 398.3 49.67 384 32 384zM416 96c-17.67 0-32 14.33-32 31.1V480C384 497.7 398.3 512 416 512s32-14.33 32-31.1V127.1C448 110.3 433.7 96 416 96zM288 192C270.3 192 256 206.3 256 223.1v256C256 497.7 270.3 512 288 512s32-14.33 32-31.1V223.1C320 206.3 305.7 192 288 192z" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="container-bar-center"></div>
+                <div class="container-bar-left">
+                    <div class="time">
+                        <p class="time_now">00:00</p>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div id="applications">
+            <section class="container-app">
+                <div class="apps icon_spotify">
+                    <div class="app">
+                        <img class="icon_img" src="icon_app/icon_spotify.png">
+                    </div>
+                </div>
+                <div class="apps icon-instagram">
+                    <div class="app">
+                        <img class="icon_img" src="icon_app/icon_insta.png">
+                    </div>
+                </div>
+                <div class="apps icon-calculator">
+                    <div class="app">
+                        <img class="icon_img" src="icon_app/icon_calc.png">
+                    </div>
+                </div>
+                <div class="apps icon_whats">
+                    <div class="app">
+                        <img class="icon_img" src="icon_app/icon_whats.png">
+                    </div>
+                </div>
+                <div class="apps">
+                    <div class="app">
+                        <img class="icon_img_showApps" src="icon_app/icon_menuApps.png">
+                    </div>
+                </div>
+            </section>
+            <div class="line-home"></div>
+        </div>
+
+        <!-- LAYOUTs -->
+        <!-- CALCULATOR -->
+        <div id="container-math">
+            <nav class="container_logo">
+                <svg class="back svg16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z" />
+                </svg>
+                <h3>Calculator</h3>
+            </nav>
+
+            <div class="container-inputs">
+                <input type="text" class="nomerator">
+                <p>+</p>
+                <input type="text" class="denominator">
+            </div>
+
+            <p class="output">0</p>
+
+            <button type="submit" class="btn">SOMAR</button>
+        </div>
+
+        <!-- INSTAGRAM -->
+        <div id="container-insta">
+            <!-- STORIES -->
+            <nav class="bars-top flex-left">
+                <p>Instagram</p>
+                <div class="tools flex-center">
+                    <div class="item like-this">
+                        <svg class="svg20f" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <path d="M200 344V280H136C122.7 280 112 269.3 112 256C112 242.7 122.7 232 136 232H200V168C200 154.7 210.7 144 224 144C237.3 144 248 154.7 248 168V232H312C325.3 232 336 242.7 336 256C336 269.3 325.3 280 312 280H248V344C248 357.3 237.3 368 224 368C210.7 368 200 357.3 200 344zM0 96C0 60.65 28.65 32 64 32H384C419.3 32 448 60.65 448 96V416C448 451.3 419.3 480 384 480H64C28.65 480 0 451.3 0 416V96zM48 96V416C48 424.8 55.16 432 64 432H384C392.8 432 400 424.8 400 416V96C400 87.16 392.8 80 384 80H64C55.16 80 48 87.16 48 96z" />
+                        </svg>
+                    </div>
+                    <div class="item search-user">
+                        <svg class="svg20f" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z" />
+                        </svg>
+                    </div>
+                    <div class="item send-this">
+                        <svg class="svg20f" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M501.6 4.186c-7.594-5.156-17.41-5.594-25.44-1.063L12.12 267.1C4.184 271.7-.5037 280.3 .0431 289.4c.5469 9.125 6.234 17.16 14.66 20.69l153.3 64.38v113.5c0 8.781 4.797 16.84 12.5 21.06C184.1 511 188 512 191.1 512c4.516 0 9.038-1.281 12.99-3.812l111.2-71.46l98.56 41.4c2.984 1.25 6.141 1.875 9.297 1.875c4.078 0 8.141-1.031 11.78-3.094c6.453-3.625 10.88-10.06 11.95-17.38l64-432C513.1 18.44 509.1 9.373 501.6 4.186zM369.3 119.2l-187.1 208.9L78.23 284.7L369.3 119.2zM215.1 444v-49.36l46.45 19.51L215.1 444zM404.8 421.9l-176.6-74.19l224.6-249.5L404.8 421.9z" />
+                        </svg>
+                    </div>
+                </div>
+            </nav>
+            <div class="stories-insta display-row">
+                <div class="conteiner-grup-stories">
+                    <div class="storie1"></div>
+                    <div class="storie1"></div>
+                    <div class="storie1"></div>
+                    <div class="storie1"></div>
+                    <div class="storie1"></div>
+                    <div class="storie1"></div>
+                    <div class="storie1"></div>
+                    <div class="storie1"></div>
+                    <div class="storie1"></div>
+                </div>
+            </div>
+
+            <!-- USERS -->
+            <div class="content">
+                <!-- User 1 -->
+                <div class="user">
+                    <div class="conteiner-top">
+                        <div class="conteiner-identification">
+                            <img src="https://img.olhardigital.com.br/wp-content/uploads/2022/09/instagram-scaled.jpg" alt="my img">
+                            <p>Jakki_fx</p>
+                        </div>
+                        <div class="more">
+                            <p>...</p>
+                        </div>
+                    </div>
+                    <div class="post">
+                        <img src="https://images.unsplash.com/photo-1580895456895-cfdf02e4c23f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Y2l0eSUyMG5pZ2h0fGVufDB8fDB8fA%3D%3D&w=1000&q=80" alt="nature">
+                    </div>
+                    <div class="container-this">
+                        <div class="container-grup-this">
+                            <div class="item1">
+                                <svg class="svg20f" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M244 84L255.1 96L267.1 84.02C300.6 51.37 347 36.51 392.6 44.1C461.5 55.58 512 115.2 512 185.1V190.9C512 232.4 494.8 272.1 464.4 300.4L283.7 469.1C276.2 476.1 266.3 480 256 480C245.7 480 235.8 476.1 228.3 469.1L47.59 300.4C17.23 272.1 0 232.4 0 190.9V185.1C0 115.2 50.52 55.58 119.4 44.1C164.1 36.51 211.4 51.37 244 84C243.1 84 244 84.01 244 84L244 84zM255.1 163.9L210.1 117.1C188.4 96.28 157.6 86.4 127.3 91.44C81.55 99.07 48 138.7 48 185.1V190.9C48 219.1 59.71 246.1 80.34 265.3L256 429.3L431.7 265.3C452.3 246.1 464 219.1 464 190.9V185.1C464 138.7 430.4 99.07 384.7 91.44C354.4 86.4 323.6 96.28 301.9 117.1L255.1 163.9z" />
+                                </svg>
+                                <svg class="svg20f" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M447.1 0h-384c-35.25 0-64 28.75-64 63.1v287.1c0 35.25 28.75 63.1 64 63.1h96v83.98c0 9.836 11.02 15.55 19.12 9.7l124.9-93.68h144c35.25 0 64-28.75 64-63.1V63.1C511.1 28.75 483.2 0 447.1 0zM464 352c0 8.75-7.25 16-16 16h-160l-80 60v-60H64c-8.75 0-16-7.25-16-16V64c0-8.75 7.25-16 16-16h384c8.75 0 16 7.25 16 16V352z" />
+                                </svg>
+                                <svg class="svg20f" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M501.6 4.186c-7.594-5.156-17.41-5.594-25.44-1.063L12.12 267.1C4.184 271.7-.5037 280.3 .0431 289.4c.5469 9.125 6.234 17.16 14.66 20.69l153.3 64.38v113.5c0 8.781 4.797 16.84 12.5 21.06C184.1 511 188 512 191.1 512c4.516 0 9.038-1.281 12.99-3.812l111.2-71.46l98.56 41.4c2.984 1.25 6.141 1.875 9.297 1.875c4.078 0 8.141-1.031 11.78-3.094c6.453-3.625 10.88-10.06 11.95-17.38l64-432C513.1 18.44 509.1 9.373 501.6 4.186zM369.3 119.2l-187.1 208.9L78.23 284.7L369.3 119.2zM215.1 444v-49.36l46.45 19.51L215.1 444zM404.8 421.9l-176.6-74.19l224.6-249.5L404.8 421.9z" />
+                                </svg>
+                            </div>
+                            <div class="save-this">
+                                <svg class="svg18f" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                    <path d="M336 0h-288C21.49 0 0 21.49 0 48v431.9c0 24.7 26.79 40.08 48.12 27.64L192 423.6l143.9 83.93C357.2 519.1 384 504.6 384 479.9V48C384 21.49 362.5 0 336 0zM336 452L192 368l-144 84V54C48 50.63 50.63 48 53.1 48h276C333.4 48 336 50.63 336 54V452z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-comments">
+                        <div class="comments">
+                            <p>
+                                Liked by <span class="bold-user-comments">Jack, A Lenda!</span> end <span>others</span>
+                            </p>
+                            <p class="date-comment">SEPT 29</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- User 2 -->
+                <div class="user">
+                    <div class="conteiner-top">
+                        <div class="conteiner-identification">
+                            <img src="https://media.istockphoto.com/vectors/young-man-anime-style-character-vector-id1188980757?k=20&m=1188980757&s=612x612&w=0&h=mchP5EsIbmDRCWs3k8N2xtDfjaMTF2DU3ahc_HPsSMw=" alt="my img">
+                            <p>Pablo</p>
+                        </div>
+                        <div class="more">
+                            <p>...</p>
+                        </div>
+                    </div>
+                    <div class="post">
+                        <img src="https://img.freepik.com/free-vector/perspective-japanese-street-neon-lights_52683-44988.jpg" alt="nature">
+                    </div>
+                    <div class="container-this">
+                        <div class="container-grup-this">
+                            <div class="item1">
+                                <svg class="svg20f" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M244 84L255.1 96L267.1 84.02C300.6 51.37 347 36.51 392.6 44.1C461.5 55.58 512 115.2 512 185.1V190.9C512 232.4 494.8 272.1 464.4 300.4L283.7 469.1C276.2 476.1 266.3 480 256 480C245.7 480 235.8 476.1 228.3 469.1L47.59 300.4C17.23 272.1 0 232.4 0 190.9V185.1C0 115.2 50.52 55.58 119.4 44.1C164.1 36.51 211.4 51.37 244 84C243.1 84 244 84.01 244 84L244 84zM255.1 163.9L210.1 117.1C188.4 96.28 157.6 86.4 127.3 91.44C81.55 99.07 48 138.7 48 185.1V190.9C48 219.1 59.71 246.1 80.34 265.3L256 429.3L431.7 265.3C452.3 246.1 464 219.1 464 190.9V185.1C464 138.7 430.4 99.07 384.7 91.44C354.4 86.4 323.6 96.28 301.9 117.1L255.1 163.9z" />
+                                </svg>
+                                <svg class="svg20f" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M447.1 0h-384c-35.25 0-64 28.75-64 63.1v287.1c0 35.25 28.75 63.1 64 63.1h96v83.98c0 9.836 11.02 15.55 19.12 9.7l124.9-93.68h144c35.25 0 64-28.75 64-63.1V63.1C511.1 28.75 483.2 0 447.1 0zM464 352c0 8.75-7.25 16-16 16h-160l-80 60v-60H64c-8.75 0-16-7.25-16-16V64c0-8.75 7.25-16 16-16h384c8.75 0 16 7.25 16 16V352z" />
+                                </svg>
+                                <svg class="svg20f" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M501.6 4.186c-7.594-5.156-17.41-5.594-25.44-1.063L12.12 267.1C4.184 271.7-.5037 280.3 .0431 289.4c.5469 9.125 6.234 17.16 14.66 20.69l153.3 64.38v113.5c0 8.781 4.797 16.84 12.5 21.06C184.1 511 188 512 191.1 512c4.516 0 9.038-1.281 12.99-3.812l111.2-71.46l98.56 41.4c2.984 1.25 6.141 1.875 9.297 1.875c4.078 0 8.141-1.031 11.78-3.094c6.453-3.625 10.88-10.06 11.95-17.38l64-432C513.1 18.44 509.1 9.373 501.6 4.186zM369.3 119.2l-187.1 208.9L78.23 284.7L369.3 119.2zM215.1 444v-49.36l46.45 19.51L215.1 444zM404.8 421.9l-176.6-74.19l224.6-249.5L404.8 421.9z" />
+                                </svg>
+                            </div>
+                            <div class="save-this">
+                                <svg class="svg18f" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                    <path d="M336 0h-288C21.49 0 0 21.49 0 48v431.9c0 24.7 26.79 40.08 48.12 27.64L192 423.6l143.9 83.93C357.2 519.1 384 504.6 384 479.9V48C384 21.49 362.5 0 336 0zM336 452L192 368l-144 84V54C48 50.63 50.63 48 53.1 48h276C333.4 48 336 50.63 336 54V452z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-comments">
+                        <div class="comments">
+                            <p>
+                                Liked by <span class="bold-user-comments">Jack, A Lenda!</span> end <span>others</span>
+                            </p>
+                            <p class="date-comment">SEPT 29</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- User 3 -->
+                <div class="user">
+                    <div class="conteiner-top">
+                        <div class="conteiner-identification">
+                            <img src="https://www.jou.ufl.edu/wp-content/uploads/2017/11/iStock-594941190.jpg" alt="my img">
+                            <p>Nataly</p>
+                        </div>
+                        <div class="more">
+                            <p>...</p>
+                        </div>
+                    </div>
+                    <div class="post">
+                        <img src="https://about.gitlab.com/images/blogimages/speedmonorepo.jpg" alt="nature">
+                    </div>
+                    <div class="container-this">
+                        <div class="container-grup-this">
+                            <div class="item1">
+                                <svg class="svg20f" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M244 84L255.1 96L267.1 84.02C300.6 51.37 347 36.51 392.6 44.1C461.5 55.58 512 115.2 512 185.1V190.9C512 232.4 494.8 272.1 464.4 300.4L283.7 469.1C276.2 476.1 266.3 480 256 480C245.7 480 235.8 476.1 228.3 469.1L47.59 300.4C17.23 272.1 0 232.4 0 190.9V185.1C0 115.2 50.52 55.58 119.4 44.1C164.1 36.51 211.4 51.37 244 84C243.1 84 244 84.01 244 84L244 84zM255.1 163.9L210.1 117.1C188.4 96.28 157.6 86.4 127.3 91.44C81.55 99.07 48 138.7 48 185.1V190.9C48 219.1 59.71 246.1 80.34 265.3L256 429.3L431.7 265.3C452.3 246.1 464 219.1 464 190.9V185.1C464 138.7 430.4 99.07 384.7 91.44C354.4 86.4 323.6 96.28 301.9 117.1L255.1 163.9z" />
+                                </svg>
+                                <svg class="svg20f" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M447.1 0h-384c-35.25 0-64 28.75-64 63.1v287.1c0 35.25 28.75 63.1 64 63.1h96v83.98c0 9.836 11.02 15.55 19.12 9.7l124.9-93.68h144c35.25 0 64-28.75 64-63.1V63.1C511.1 28.75 483.2 0 447.1 0zM464 352c0 8.75-7.25 16-16 16h-160l-80 60v-60H64c-8.75 0-16-7.25-16-16V64c0-8.75 7.25-16 16-16h384c8.75 0 16 7.25 16 16V352z" />
+                                </svg>
+                                <svg class="svg20f" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M501.6 4.186c-7.594-5.156-17.41-5.594-25.44-1.063L12.12 267.1C4.184 271.7-.5037 280.3 .0431 289.4c.5469 9.125 6.234 17.16 14.66 20.69l153.3 64.38v113.5c0 8.781 4.797 16.84 12.5 21.06C184.1 511 188 512 191.1 512c4.516 0 9.038-1.281 12.99-3.812l111.2-71.46l98.56 41.4c2.984 1.25 6.141 1.875 9.297 1.875c4.078 0 8.141-1.031 11.78-3.094c6.453-3.625 10.88-10.06 11.95-17.38l64-432C513.1 18.44 509.1 9.373 501.6 4.186zM369.3 119.2l-187.1 208.9L78.23 284.7L369.3 119.2zM215.1 444v-49.36l46.45 19.51L215.1 444zM404.8 421.9l-176.6-74.19l224.6-249.5L404.8 421.9z" />
+                                </svg>
+                            </div>
+                            <div class="save-this">
+                                <svg class="svg18f" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                    <path d="M336 0h-288C21.49 0 0 21.49 0 48v431.9c0 24.7 26.79 40.08 48.12 27.64L192 423.6l143.9 83.93C357.2 519.1 384 504.6 384 479.9V48C384 21.49 362.5 0 336 0zM336 452L192 368l-144 84V54C48 50.63 50.63 48 53.1 48h276C333.4 48 336 50.63 336 54V452z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-comments">
+                        <div class="comments">
+                            <p>
+                                Liked by <span class="bold-user-comments">Jack, A Lenda!</span> end <span>others</span>
+                            </p>
+                            <p class="date-comment">SEPT 29</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TOOLS BOTTOM -->
+            <div class="tools-instagram-bottom flex-grid">
+                <div class="tool go-home dp-f-center">
+                    <svg class="svg20f" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                        <path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z" />
+                    </svg>
+                </div>
+                <div class="tool go-video dp-f-center">
+                    <svg class="svg20f" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="M0 32H512V480H0V32zM48 352v64h64V352H48zm416 0H400v64h64V352zM48 224v64h64V224H48zm416 0H400v64h64V224zM48 96v64h64V96H48zm416 0H400v64h64V96zM160 96V224H352V96H160zM352 288H160V416H352V288z" />
+                    </svg>
+                </div>
+                <div class="tool go-newPost dp-f-center">
+                    <svg class="svg20f" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path d="M200 344V280H136C122.7 280 112 269.3 112 256C112 242.7 122.7 232 136 232H200V168C200 154.7 210.7 144 224 144C237.3 144 248 154.7 248 168V232H312C325.3 232 336 242.7 336 256C336 269.3 325.3 280 312 280H248V344C248 357.3 237.3 368 224 368C210.7 368 200 357.3 200 344zM0 96C0 60.65 28.65 32 64 32H384C419.3 32 448 60.65 448 96V416C448 451.3 419.3 480 384 480H64C28.65 480 0 451.3 0 416V96zM48 96V416C48 424.8 55.16 432 64 432H384C392.8 432 400 424.8 400 416V96C400 87.16 392.8 80 384 80H64C55.16 80 48 87.16 48 96z" />
+                    </svg>
+                </div>
+                <div class="tool go-store dp-f-center">
+                    <svg class="svg20f" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path d="M160 112c0-35.3 28.7-64 64-64s64 28.7 64 64v48H160V112zm-48 48H48c-26.5 0-48 21.5-48 48V416c0 53 43 96 96 96H352c53 0 96-43 96-96V208c0-26.5-21.5-48-48-48H336V112C336 50.1 285.9 0 224 0S112 50.1 112 112v48zm24 96c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24zm200-24c0 13.3-10.7 24-24 24s-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24z" />
+                    </svg>
+                </div>
+                <div class="tool go-profile dp-f-center">
+                    <svg class="svg20f" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path d="M272 304h-96C78.8 304 0 382.8 0 480c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32C448 382.8 369.2 304 272 304zM48.99 464C56.89 400.9 110.8 352 176 352h96c65.16 0 119.1 48.95 127 112H48.99zM224 256c70.69 0 128-57.31 128-128c0-70.69-57.31-128-128-128S96 57.31 96 128C96 198.7 153.3 256 224 256zM224 48c44.11 0 80 35.89 80 80c0 44.11-35.89 80-80 80S144 172.1 144 128C144 83.89 179.9 48 224 48z" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <div id="container-spotify">
+            <nav class="container_logo">
+                <h3>Good morning</h3>
+                <div class="items">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
+                        <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z" />
+                        <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z" />
+                    </svg>
+                </div>
+            </nav>
+
+            <div class="container_stylesMusic">
+                <div class="content_styles">
+                    <div class="img">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnT6-WFNgR_9OHgj8nwSHXCtgk56l8Vs-JRg&usqp=CAU">
+                    </div>
+                    <div class="singer">
+                        <p>Jazz</p>
+                    </div>
+                </div>
+                <div class="content_styles">
+                    <div class="img">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPaN895UMS6xFlFRLbpjOgD_w140ucz9SIdw&usqp=CAU">
+                    </div>
+                    <div class="singer">
+                        <p>Hip Hop Mix</p>
+                    </div>
+                </div>
+                <div class="content_styles">
+                    <div class="img">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4vL1L0BaEPY1JIGR7RPQ0DegKSZo5UWS84A&usqp=CAU">
+                    </div>
+                    <div class="singer">
+                        <p>Funk</p>
+                    </div>
+                </div>
+                <div class="content_styles">
+                    <div class="img">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRxzZ27gFEPEv4rQl8hw13Ufi376wceKV79A&usqp=CAU">
+                    </div>
+                    <div class="singer">
+                        <p>Eletronic</p>
+                    </div>
+                </div>
+                <div class="content_styles">
+                    <div class="img">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuGWMdOjwrmuFvdRFwYbOZ0A4QiD5R-4a_AQ&usqp=CAU">
+                    </div>
+                    <div class="singer">
+                        <p>International</p>
+                    </div>
+                </div>
+                <div class="content_styles">
+                    <div class="img">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBKofeQCVck7LZGipAITRlWjns9GQ7LEU4uQ&usqp=CAU">
+                    </div>
+                    <div class="singer">
+                        <p>Pop</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- BARRA DE SCROLL LATERAL -->
+            <div id="container_overflow_row">
+                <div class="container_music">
+                    <div class="title_music">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKL2yUKrS2LxQEqwp60Hf1YKLdnTKXVLHsqQ&usqp=CAU" alt="Cantora da musica 'girl in red'">
+                        <div class="name_author">
+                            <p><small>new release from</small></p>
+                            <h3>girl in red</h3>
+                        </div>
+                    </div>
+                    <div class="container_music_img">
+                        <div class="img">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj8fxOYafPtuuMXSbgivH9dM0QIVxybfSgpA&usqp=CAU" alt="Imagem da musica 'girl in red'">
+                        </div>
+                        <div class="singer">
+                            <div class="title">
+                                <p>If i could make it go quiet</p>
+                                <p><small>Album • girl in red</small></p>
+                            </div>
+                            <div class="base_play">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                    <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container_music">
+                    <div class="title_music">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKL2yUKrS2LxQEqwp60Hf1YKLdnTKXVLHsqQ&usqp=CAU" alt="Cantora da musica 'girl in red'">
+                        <div class="name_author">
+                            <p><small>new release from</small></p>
+                            <h3>girl in red</h3>
+                        </div>
+                    </div>
+                    <div class="container_music_img">
+                        <div class="img">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj8fxOYafPtuuMXSbgivH9dM0QIVxybfSgpA&usqp=CAU" alt="Imagem da musica 'girl in red'">
+                        </div>
+                        <div class="singer">
+                            <div class="title">
+                                <p>If i could make it go quiet</p>
+                                <p><small>Album • girl in red</small></p>
+                            </div>
+                            <div class="base_play">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                    <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container_music">
+                    <div class="title_music">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKL2yUKrS2LxQEqwp60Hf1YKLdnTKXVLHsqQ&usqp=CAU" alt="Cantora da musica 'girl in red'">
+                        <div class="name_author">
+                            <p><small>new release from</small></p>
+                            <h3>girl in red</h3>
+                        </div>
+                    </div>
+                    <div class="container_music_img">
+                        <div class="img">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj8fxOYafPtuuMXSbgivH9dM0QIVxybfSgpA&usqp=CAU" alt="Imagem da musica 'girl in red'">
+                        </div>
+                        <div class="singer">
+                            <div class="title">
+                                <p>If i could make it go quiet</p>
+                                <p><small>Album • girl in red</small></p>
+                            </div>
+                            <div class="base_play">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                    <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container_music">
+                    <div class="title_music">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKL2yUKrS2LxQEqwp60Hf1YKLdnTKXVLHsqQ&usqp=CAU" alt="Cantora da musica 'girl in red'">
+                        <div class="name_author">
+                            <p><small>new release from</small></p>
+                            <h3>girl in red</h3>
+                        </div>
+                    </div>
+                    <div class="container_music_img">
+                        <div class="img">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj8fxOYafPtuuMXSbgivH9dM0QIVxybfSgpA&usqp=CAU" alt="Imagem da musica 'girl in red'">
+                        </div>
+                        <div class="singer">
+                            <div class="title">
+                                <p>If i could make it go quiet</p>
+                                <p><small>Album • girl in red</small></p>
+                            </div>
+                            <div class="base_play">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                    <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+            
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

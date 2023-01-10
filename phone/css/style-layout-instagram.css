@@ -1,0 +1,192 @@
+#container-insta {
+    width: 100%;
+    height: 100vh;
+    display: none;
+    background-color: #fff;
+    text-align: center;
+}
+
+#container-insta .bars-top {
+    padding-top: 30px;
+}
+
+#container-insta .bars-top p {
+    margin: 0 0 0 10px;
+    font-size: 2em;
+    font-family: var(--fontsInstagramTitle);
+    font-weight: bold;
+}
+
+#container-insta p {
+    margin: 0 0 0 10px;
+}
+
+.tools {
+    width: 40%;
+    align-items: center;
+}
+
+.stories-insta {
+    width: 308px;
+    padding: 10px;
+    border-bottom: 1.6px solid rgba(240, 240, 240, 0.8);
+}
+
+.storie1 {
+    width: 50px;
+    min-width: 50px;
+    height: 50px;
+    margin: 0 5px 0 5px;
+    background-image: url(https://media.thetab.com/blogs.dir/90/files/2018/08/portrait-face-woman-girl-female-bowl-person-people-human.jpg);
+    background-size: cover;
+    background-position-x: center;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+}
+
+.conteiner-grup-stories {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    overflow-x: scroll;
+}
+
+::-webkit-scrollbar {
+    background: #fff;
+    width: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #fff;
+    border-radius: 5px;
+}
+
+/* CONTENT */
+.content {
+    width: 100%;
+    height: 50vh;
+    overflow-y: scroll;
+}
+
+.conteiner-top {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.conteiner-identification {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-width: 80px;
+    max-width: 160px;
+    margin-left: 10px;
+    min-height: 50px;
+    max-height: 50px;
+    overflow: hidden;
+}
+
+.conteiner-identification img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    image-rendering: crisp-edges;
+}
+
+.conteiner-identification p {
+    font-family: var(--fontsGlobal);
+    font-size: .9em;
+    font-weight: 300;
+}
+
+.conteiner-top .more p {
+    font-weight: 800;
+    font-size: 1.5em;
+}
+.post {
+    overflow: hidden;
+}
+
+.post img {
+    width: 100%;
+    height: 450px;
+    image-rendering: crisp-edges;
+}
+
+.container-this {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+.container-grup-this {
+    width: 95%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-grup-this .item1 {
+    width: 35%;
+    height: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container-grup-this .item1 svg {
+    margin: 0px;
+}
+
+.comments p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: .85em;
+}
+
+.comments {
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.comments p span {
+    font-weight: 600;
+}
+
+.comments .date-comment {
+    font-weight: 100;
+    color: rgba(170, 170, 170, 0.8);
+    font-weight: 400;
+    font-size: .65em;
+}
+
+/* BAR TOOLS */
+.tools-instagram-bottom {
+    width: 100%;
+    background: #fff;
+    position: absolute;
+    bottom: 0;
+    border-top: 1.6px solid rgba(240, 240, 240, 0.8);
+}
+
+.tools-instagram-bottom .tool {
+    height: 60px;
+}
+
+.tools-instagram-bottom .tool:hover {
+    background-color: rgba(200, 200, 200, 0.5);
+}
+
+.tools-instagram-bottom .tool svg {
+    margin-top: 15px;
+}

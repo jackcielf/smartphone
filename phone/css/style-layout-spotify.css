@@ -1,0 +1,171 @@
+#container-spotify {
+    width: 100%;
+    height: 100vh;
+    display: none;
+    background: linear-gradient(130deg, #141414, #9D00FB);
+    text-align: center;
+    color: whitesmoke;
+}
+
+#container-spotify .container_logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 10px;
+    padding-top: 50px;
+}
+
+#container-spotify .container_logo h3 {
+    font-family: var(--fontSpotify);
+}
+
+/* ESTILOS MUSICAIS */
+.container_stylesMusic {
+    height: 200px;
+    margin: 15px 10px;
+    display: flex;
+    align-items: space-around;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container_stylesMusic .content_styles {
+    width: 48.5%;
+    height: 55px;
+    background: rgba(255, 255, 255, .1);
+    border-radius: 5px;
+    display: flex;
+    font-size: .8em;
+    font-weight: 450;
+}
+
+.content_styles .img {
+    width: 70px;
+    height: 55px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px 0 0 5px;
+}
+
+.content_styles .img img {
+    width: 70px;
+    height: 55px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.content_styles .singer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.content_styles .singer p {
+    padding: 0 0 0 7px;
+    font-family: var(--fontSpotify);
+}
+
+/* MUSICAS EM LINHA */
+#container_overflow_row {
+    height: 200px;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding-right: 10px;
+    scroll-snap-type: x mandatory;
+}
+
+.container_music {
+    scroll-snap-align: start;
+    min-width: 300px;
+    padding-left: 10px;
+}
+
+.title_music {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.title_music img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+}
+
+.name_author {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 7px;
+}
+
+.name_author p small {
+    text-transform: uppercase;
+    font-size: .6em;
+    color: rgba(255, 255, 255, .7);
+}
+
+.container_music_img {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 10px;
+    background: rgba(255, 255, 255, .1);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.container_music_img .img {
+    width: 150px;
+    height: clamp(120px, 130px, 140px);
+    overflow: hidden;
+    position: relative;
+    left: -2px;
+
+}
+
+.container_music_img .img img {
+    width: 140px;
+    height: 140px;
+}
+
+.container_music_img .singer .title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.title p {
+    font-weight: 600;
+    text-align: left;
+    font-size: .8em;
+}
+
+.title p small {
+    font-size: .7em;
+    color: rgba(255, 255, 255, .7);
+}
+
+.container_music_img .singer {
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 10px 10px 7px 10px;
+}
+
+.container_music_img .singer .base_play {
+    min-height: 50px;
+    max-height: 100px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
